@@ -26,9 +26,9 @@ def directors_totals(nds)
   
   while name_index < nds.length do
    
-    gross_for_director(nds[0])
+    gross_for_director(nds[name_index])
     
-    result[directors_database[name_index][:name]] = ww_gross_total
+    result[nds[name_index][:name]] = ww_gross_total
     
     ww_gross_index = 0
     ww_gross_total = 0
