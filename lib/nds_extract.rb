@@ -21,7 +21,21 @@ end
 #
 # { directorOne => allTheMoneyTheyMade, ... }
 def directors_totals(nds)
+  result = {}
+  name_index = 0
   
+  while name_index < nds.length do
+   
+    gross_for_director(nds[0])
+    
+    result[directors_database[name_index][:name]] = ww_gross_total
+    
+    ww_gross_index = 0
+    ww_gross_total = 0
+    
+    name_index += 1
+    
+  end
   
   
   
